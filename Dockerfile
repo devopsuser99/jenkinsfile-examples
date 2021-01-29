@@ -1,8 +1,8 @@
-FROM docker.io/jenkins/jenkins:2.141
+#FROM docker.io/jenkins/jenkins:2.141
 
-USER root
+#USER root
 
-RUN apt-get update -y && \
+#RUN apt-get update -y && \
     apt-get install -y awscli jq gettext-base tree vim zip
 
 RUN wget https://download.docker.com/linux/static/stable/x86_64/docker-18.06.1-ce.tgz && \
